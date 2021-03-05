@@ -1,5 +1,7 @@
-import React from 'react';
+import React, {useEffect, useState} from 'react';
 
+
+// DUMB component that just received the response from the api request
 const Component = ({
   login,
   avatar_url,
@@ -7,7 +9,8 @@ const Component = ({
   public_repos,
   public_gists,
   followers
-}) => (
+}) => {
+  return (
   <div className="github-card user-card">
     <div className="header User" />
     <a className="avatar" href={`https://github.com/${login}`}>
@@ -17,9 +20,9 @@ const Component = ({
       <h1>{name}</h1>
       <ul className="status">
         <li>
-          <a href={`https://github.com/${login}?tab=repositories`}>
-            <strong>{public_repos}</strong>Repos
-          </a>
+              <a href={`https://github.com/${login}?tab=repositories`}>
+                <strong>{public_repos}</strong>Repos
+              </a>
         </li>
         <li>
           <a href={`https://gist.github.com/${login}`}>
@@ -34,6 +37,6 @@ const Component = ({
       </ul>
     </div>
   </div>
-);
+)};
 
 export default Component;

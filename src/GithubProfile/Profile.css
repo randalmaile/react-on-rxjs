@@ -2,8 +2,7 @@ body {
   padding: 0;
   margin: 0;
   font-size: 14px;
-  font-family: 'Lucida Grande', 'Lucida Sans', Geneva, Verdana, sans-serif;
-  overflow: hidden;
+  font-family: "Lucida Grande", "Lucida Sans", Geneva, Verdana, sans-serif;
 }
 
 body.ready {
@@ -68,7 +67,7 @@ body.ready {
 
 .github-card ul:after {
   display: block;
-  content: '';
+  content: "";
   clear: both;
 }
 
@@ -99,7 +98,7 @@ body.ready {
 }
 
 .user-card .header {
-  background-image: url('https://cdn-images-1.medium.com/max/2000/1*19LWzzJJDPqGq67Vyd0EjQ.jpeg');
+  background-image: url("https://cdn-images-1.medium.com/max/2000/1*19LWzzJJDPqGq67Vyd0EjQ.jpeg");
 }
 
 .user-card .User {
